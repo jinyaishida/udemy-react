@@ -80,3 +80,64 @@
 
 // const sayHello = (name = "初期値") => console.log(`こんにちは！${name}さん！`);
 // sayHello("ishida")
+
+/**
+ * スプレッド構文
+ * 配列の展開
+ */
+// const arr1 = [10, 20];
+// const arr2 = [30, 40];
+
+// const arr3 = [...arr1];
+// arr3[0] = 100;
+// console.log(arr3)
+// console.log(arr1)
+
+/**
+ * mapとfilter
+ */
+
+//  const nameArr = ["田中", "鈴木", "石田"];
+
+//  //returnされた結果に基づいて新しい配列を生成する
+// //  const nameArr2 = nameArr.map((name)=>{
+// //    return name;
+// //  })
+// //  console.log(nameArr2)
+
+// //配列をループして処理をする
+// nameArr.map((name) => console.log(name));
+
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num)=> {
+//   return num % 2 === 0
+// });
+// console.log(newNumArr)
+
+// const newNameArr = nameArr.map((name)=> {
+//   if(name === "石田") {
+//     return name
+//   } else {
+//     return `${name}さん`
+//   }
+// })
+// console.log(newNameArr)
+
+/**
+ * 三項演算子
+ */
+
+//ある条件? 条件がtrueの時 : 条件がfalseの時
+
+//  const num = "1300"
+//  const formatNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください'
+//  console.log(formatNum)
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "炎上中" : "まだ大丈夫";
+};
+console.log(checkSum(50, 90));
+
+const num = null;
+const fee = num || "金額未設定です";
+console.log(fee);

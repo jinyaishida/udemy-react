@@ -133,11 +133,11 @@
 //  const formatNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください'
 //  console.log(formatNum)
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "炎上中" : "まだ大丈夫";
-};
-console.log(checkSum(50, 90));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "炎上中" : "まだ大丈夫";
+// };
+// console.log(checkSum(50, 90));
 
-const num = null;
-const fee = num || "金額未設定です";
-console.log(fee);
+// const num = null;
+// const fee = num || "金額未設定です";
+// console.log(fee);
